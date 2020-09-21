@@ -12,7 +12,8 @@
 As a package manager user, what that the package manager is able to analyse and repair my environment in case that I get system exceptions, so that I don't need to contact the support if my AE client is messed up.
 
 There are two sub-commands:
-
+| Sub Command  | Description                                    | Command            |
+|--------------|------------------------------------------------|--------------------|
 | doctor check | analyze and show up current environment issues	| apm doctor check   |
 | doctor fix   | repair environment issues	                | apm doctor fix     |
 
@@ -35,6 +36,7 @@ There are two sub-commands:
 
 ###### Action Builder:
 In Action builder, Lets try to add new action in the existing action package and the delete process of action.
+
      > Add an action:
 		1. Login to AE.
 		2. Go to process assembly.
@@ -68,8 +70,8 @@ This command has the following option(s):
 
 |Name           |Shortkey|Required |    Arguments	        |                Description                                                                              |
 |---------------|--------|---------|----------------------------|---------------------------------------------------------------------------------------------------------|
-|--output-format|-o	 | No	   |[solution\|zip|\tar\|folder] <br>Default: folder|Defines the output format of the package. The possible options are:<br>SOLUTION: Zip-archive with the extension ".solution"<br>ZIP: Zip-archive with the extension ".zip"<br>TAR: gzip-compressed tar-archive with the extension ".tar.gz"<br>FOLDER: Folder in the specified target directory
-|--target-dir	|-d	 | No	   |N/A <br>Default:  <current_dir>                    | /packages/	Path to target directory in local filesystem |
+|--output-format|-o	 | No	   |[solution\|zip\|\tar\|folder] <br>Default: folder|Defines the output format of the package. The possible options are:<br>SOLUTION: Zip-archive with the extension ".solution"<br>ZIP: Zip-archive with the extension ".zip"<br>TAR: gzip-compressed tar-archive with the extension ".tar.gz"<br>FOLDER: Folder in the specified target directory
+|--target-dir	|-d	 | No	   |N/A <br>Default:  <current_dir>                    | Path to target directory in local filesystem E.g. /packages/|
 |--client	|-c	 | No	   |NA	                        |Automation Engine client number. E.g.106   |
 |--host	        |-H	 | No	   |NA	                        |Automation Engine hostname or IP address. E.g.  10.149.132.64         |
 |--password	|-pw	 | No	   |NA	                        |Automation Engine password. E.g. password |
