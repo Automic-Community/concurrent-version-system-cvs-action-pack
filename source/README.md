@@ -1,4 +1,5 @@
 About CVS action pack:
+
 The Concurrent Versions System (CVS), also known as the Concurrent Versioning System, is a client-server free software revision control system in the field of software development. A version control system keeps track of all work and all changes in a set of files, and allows several developers (potentially widely separated in space and time) to collaborate. Dick Grune developed CVS as a series of shell scripts in July 1986.
 
 Available Actions:
@@ -12,8 +13,6 @@ Available Actions:
     7. Remove
     8. Update
 
-Setup:
-Ensure that CVS CLI (3rd-party) is installed and accessable as 'cvs'.
 
 Action pack depends on:
 

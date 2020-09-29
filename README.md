@@ -1,5 +1,12 @@
 ## Getting Started:
+
+
+###### Description
+
+ The Concurrent Versions System (CVS), also known as the Concurrent Versioning System, is a client-server free software revision control system in the field of software development. A version control system keeps track of all work and all changes in a set of files, and allows several developers (potentially widely separated in space and time) to collaborate. [Check the Feature support by action pack](source/README.md)
+
 ###### Prerequisite:
+
 	1. AE (Automation Engine) is installed. 
 	2. On AE, Please Install ITPA_SHARED and File System package.
 	3. apm (Automic package Manager) also installed.
@@ -9,6 +16,7 @@
 		b. Maven is installed. reference : https://maven.apache.org/install.html 
 
 ###### Apm doctor:
+
 As a package manager user, what that the package manager is able to analyse and repair my environment in case that I get system exceptions, so that I don't need to contact the support if my AE client is messed up.
 
 There are two sub-commands:
@@ -17,7 +25,8 @@ There are two sub-commands:
 | doctor check | analyze and show up current environment issues	| apm doctor check   |
 | doctor fix   | repair environment issues	                | apm doctor fix     |
 
-###### Steps to install the CVS package on AE:
+###### Steps to install the action package on AE:
+
 	1. Clone the code to your machine.
 	2. Go to the package directory.
 	3. Run maven command if uses java action pack: mvn clean package
@@ -29,12 +38,14 @@ There are two sub-commands:
 		- Host: Host on which the AE is running.
 
 ###### Verifying the installation:
+
 	1. Login to AE machine
 	2. Click on Administration.
 	3. Click on packs in corner of left menu.
 	4. Check in the displayed list of actions.
 
 ###### Action Builder:
+
 In Action builder, Lets try to add new action in the existing action package and the delete process of action.
 
      > Add an action:
@@ -62,6 +73,7 @@ In Action builder, Lets try to add new action in the existing action package and
 		7. Click on delete.
 
 ###### Distribution: 
+
 In the distribution process, we can download the exiting or updated action package from the Automation Engine by using the below command Apm build and share the zip.
 **Command: apm build [option] <package_name>**
 
@@ -80,19 +92,21 @@ This command has the following option(s):
 |--system	|-S	 | No	   |NA	                        |Selected system                      |
 
 **Example: 
-apm build -y -H vvieintegr0201.sbb01.spoc.global -c 106 -u TEST/TEST -pw *** -d D:\Software\CA -o zip -v pck.automic_cvs
+apm build -y -H vvieintegr0201.sbb01.spoc.global -c 106 -u TEST/TEST -pw *** -d /directory/ -o zip -v action_pack_name
 Output: 
-Pack PCK.AUTOMIC_CVS was built successfully at D:\Software\CA\PCK.AUTOMIC_CVS_1.2.2.zip**
+Pack action_pack_name was built successfully at /directory/action_pack_name_version.zip**
 
 
 ###### Do or Don’t:
+
 	> Do
 		1. Add action.
 		2. Delete action.
 	> Don’t
-		1)	Do not change the vara and include name. It will affect the almost all actions of the action pack.
-		2)	Do not raise a pull request for delete action.
+		1. Do not change the vara and include name. It will affect the almost all actions of the action pack.
+		2. Do not raise a pull request for delete action.
 		
 		
 ###### Copyright and License: 
+
 Broadcom does not support, maintain or warrant Solutions, Templates, Actions and any other content published on the Community and is subject to Broadcom Community Terms and Conditions (https://community.broadcom.com/termsandconditions).
